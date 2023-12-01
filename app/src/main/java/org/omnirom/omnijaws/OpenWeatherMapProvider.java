@@ -44,12 +44,14 @@ public class OpenWeatherMapProvider extends AbstractWeatherProvider {
     private List<String> mKeys = new ArrayList<String>();
     private boolean mHasAPIKey;
     private int mRequestNumber;
-    private static final String DEVICE = "ro.crdroid.device";
+    private static final String USER = "ro.build.user";
+    private static final String DESCRIPTION = "ro.build.description";
 
     public OpenWeatherMapProvider(Context context) {
         super(context);
-        String device = SystemProperties.get(DEVICE);
-        if (device == null || device.isEmpty()) return;
+        String user = SystemProperties.get(USER);
+        String description = SystemProperties.get(DESCRIPTION);
+        if (!user.equals("ponces") || !description.startsWith("treble_")) return;
         loadKeys();
         mHasAPIKey = getAPIKey() != null;
     }
