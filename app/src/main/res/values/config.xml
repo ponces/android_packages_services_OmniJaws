@@ -17,7 +17,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-	<string name="owm_api_key" translatable="false" >2eaba923f653cc4b4b1b1b5849349db6</string>
-	<string name="owm_api_key_1" translatable="false" >c071025e890429c585e4df3aeeae0640</string>
-	<string name="owm_api_key_2" translatable="false" >bf2e711833265643fa9749dfbc9c2d54</string>
+	<string name="owm_api_key" translatable="false" >ee79e2b22a079e39c714f76392a7d84c</string>
+	<string name="owm_api_key_1" translatable="false" >bc136fa2690f36e1ec8a26cad1521d5f</string>
+	<string name="owm_api_key_2" translatable="false" >21cad9b108e3f6c5b047497529c9d24b</string>
 </resources>
